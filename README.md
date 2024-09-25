@@ -1,1 +1,10 @@
 # GPTandroid
+ChatGPTのAPIを用いたAndroidのアプリです.主な目的はGithubのリポジトリを日本語で検索しやすくするのと,OpenAIのAPIを使い,Androidならではのインタフェースを用いて検索できるようにします
+主に以下のことができます.(Androidアプリはmasterにあります)
+1.Githubのリポジトリ→READMEの翻訳機能
+2.カメラで撮った写真をOpenAIのAPIを用いた画像認識する(いくつかテンプレートを用意しています)
+3.ChatGPT機能
+4.音声を録音し,それを whisperAPIを用いて翻訳,さらにChatGPTを用いて翻訳しそれをTTSでしゃべるようにする.
+
+また,1と2についてはPC側でhttpサーバを立ててそのURLが入ったQRコードを読み込むとサーバにURLや撮った写真,ChatGPTからの返答を処理し、今Androidで見ていたgithubのサイトを表示したり、写真のプロンプトをpc上で表示したりできるプログラムを用意しています。
+
